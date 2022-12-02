@@ -1,0 +1,63 @@
+.container {
+    display: grid; 
+    grid-template-columns: 0fr 1fr 0fr; 
+    grid-template-rows: 0.2fr 0.6fr 1.35fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". navbar navbar"
+      ". hero-pic ."
+      ". content ."
+      ". . ."; 
+  }
+  .navbar{
+     grid-area: navbar; 
+     width:100%;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     padding-bottom: 50px;
+    }
+    .navbar > a{
+        color: white;
+        text-decoration: none;
+        padding-left: 75px;
+    }
+    .navbar > h1{
+        color: white;
+        margin-left: 105px;
+        padding-right: 220px;
+    }
+  .hero-pic{ 
+    grid-area: hero-pic;
+    display: flex;
+    align-items: center;
+    max-height: 99%;
+    max-width: 99%;
+}
+  .content {
+    display: grid; 
+    grid-template-columns: 0.6fr 1.8fr 0.6fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". raisin ."
+      ". raisin ."
+      ". raisin ."
+      ". raisin ."; 
+    grid-area: content; 
+  }
+  .raisin{ 
+    grid-area: raisin; 
+    padding: 5%;
+    margin: 2vh 0;
+    width: 500px;
+    height: 200px;
+}
+body{
+    margin: 0px;
+   }
+.card-title{
+    background-color: rgb(217, 211, 211);
+    border: .2px solid black;
+    padding-left: 50px;
+}
